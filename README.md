@@ -1,4 +1,5 @@
 # NetSentinel
+<img width="1983" height="793" alt="netwatch" src="https://github.com/user-attachments/assets/2d87ac3a-3e02-47ad-9c0a-17f436974762" />
 
 **Network Incident Response Tool** — Scan active TCP/UDP connections, calculate risk scores, export to JSON, block with firewall.
 NOTE: Linux has some issues about installation so only compiling from source works
