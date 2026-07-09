@@ -1,7 +1,7 @@
 # NetSentinel
 
 **Network Incident Response Tool** — Scan active TCP/UDP connections, calculate risk scores, export to JSON, block with firewall.
-NOTE: Idk why but only compiling from source works on linux right now,I will try to fix it in future updates.
+NOTE: Idk why but only compiling from source works on linux right now,I will try to fix it in future updates and Theres a prebuilt version for windows if theres something wrong again.
 
 Cross-platform (Linux + Windows), C++17.
 
