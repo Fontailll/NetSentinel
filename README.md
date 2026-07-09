@@ -148,7 +148,7 @@ pacman -Syu                          # Update package database
 pacman -S mingw-w64-ucrt-x86_64-gcc cmake ninja   # Install toolchain
 
 # Build
-cd /c/Users/ereno/Desktop/netsentinel   # Use /c/ for C:\
+cd /c/Users/(username)/Desktop/netsentinel   # Use /c/ for C:\
 mkdir build && cd build
 cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release
 ninja
