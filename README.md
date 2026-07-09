@@ -37,7 +37,7 @@ pacman -Syu
 # 4. Install GCC, CMake, and Ninja (pacman is MSYS2's package manager):
 pacman -S mingw-w64-ucrt-x86_64-gcc cmake ninja
 # 5. Build:
-cd /c/Users/ereno/Desktop/netsentinel
+cd /c/Users/(username)/Desktop/netsentinel
 mkdir build && cd build
 cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release
 ninja
