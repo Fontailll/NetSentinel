@@ -1,5 +1,5 @@
-# Install script for directory: C:/Users/ereno/Desktop/netwatch
-
+# Install script for directory: C:/Users/user/Desktop/netwatch
+# rename the /user/ with ur self username
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
   set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/NetWatch")
@@ -38,7 +38,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/Users/ereno/Desktop/netwatch/build/netsentinel.exe")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/Users/user/Desktop/netwatch/build/netsentinel.exe")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/netsentinel.exe" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/netsentinel.exe")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -48,7 +48,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/Users/ereno/Desktop/netwatch/build/netsentinel_tests.exe")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/Users/user/Desktop/netwatch/build/netsentinel_tests.exe")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/netsentinel_tests.exe" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/netsentinel_tests.exe")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -60,7 +60,7 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Users/ereno/Desktop/netwatch/build/install_local_manifest.txt"
+  file(WRITE "C:/Users/user/Desktop/netwatch/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -76,6 +76,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Users/ereno/Desktop/netwatch/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "C:/Users/user/Desktop/netwatch/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
