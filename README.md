@@ -1,7 +1,19 @@
 # NetSentinel
 
 **Network Incident Response Tool** — Scan active TCP/UDP connections, calculate risk scores, export to JSON, block with firewall.
-NOTE: Idk why but only compiling from source works on linux right now,I will try to fix it in future updates and Theres a prebuilt version for windows if theres something wrong again.
+NOTE: Linux has some issues about installation so only compiling from source works
+```bash
+# Replace the (your package manager) with ur package manager like pacman -S or apt install etc.
+sudo (your package manager) gcc cmake make
+git clone https://github.com/Fontailll/NetSentinel.git
+cd NetSentinel
+mkdir build && cd build
+cmake .. -DCMAKE_BUILD_TYPE=Release
+make -j$(nproc)
+sudo cp netsentinel /usr/local/bin/
+sudo chmod +x /usr/local/bin/netsentinel
+sudo netsentinel --all
+```
 
 Cross-platform (Linux + Windows), C++17.
 
@@ -37,7 +49,7 @@ pacman -Syu
 # 4. Install GCC, CMake, and Ninja (pacman is MSYS2's package manager):
 pacman -S mingw-w64-ucrt-x86_64-gcc cmake ninja
 # 5. Build:
-cd /c/Users/(username)/Desktop/netsentinel
+cd /path/to/netsentinel
 mkdir build && cd build
 cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release
 ninja
@@ -148,7 +160,7 @@ pacman -Syu                          # Update package database
 pacman -S mingw-w64-ucrt-x86_64-gcc cmake ninja   # Install toolchain
 
 # Build
-cd /c/Users/(username)/Desktop/netsentinel   # Use /c/ for C:\
+cd /path/to/netsentinel   # Use /c/ for C:\ (e.g. /c/Users/Admin/Desktop/netsentinel)
 mkdir build && cd build
 cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release
 ninja
